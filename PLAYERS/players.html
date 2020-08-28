@@ -1,0 +1,372 @@
+<html>
+<head>
+	<title>Soccerpedia</title>
+	<link rel="shortcut icon" href="football.png" />
+	<link href="https://fonts.googleapis.com/css?family=Bree+Serif&display=swap" rel="stylesheet">
+	<style type="text/css">
+		body{
+			 font-size: 30px;
+			 font-family: Bree Serif;
+
+		}
+		h1 {
+  text-align: center;
+  padding: 50px 0;
+  font-weight: 800;
+  margin: 0;
+  letter-spacing: -1px;
+  color: inherit;
+  font-size: 40px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 30px;
+  margin: 0;
+  font-weight: 300;
+  color: inherit;
+  padding: 50px;
+}
+
+.center {
+  text-align: center;
+}
+
+section {
+  height: 100vh;
+}
+
+/* NAVIGATION */
+nav {
+  width: 80%;
+  margin: 0 auto;
+  background: #000;
+  padding: 50px 0;
+  box-shadow: 0px 5px 0px #dedede;
+}
+nav ul {
+  list-style: none;
+  text-align: center;
+}
+nav ul li {
+  display: inline-block;
+}
+nav ul li a {
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+  color: 19ffc5;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin: 0 10px;
+}
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+  transition: all .5s;
+}
+nav ul li a:hover {
+  color: #000506;
+}
+
+
+
+/* Circle */
+nav.circle ul li a {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+nav.circle ul li a:after {
+  display: block;
+  position: absolute;
+  margin: 0;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  content: '.';
+  color: transparent;
+  width: 1px;
+  height: 1px;
+  border-radius: 50%;
+  background: transparent;
+}
+nav.circle ul li a:hover:after {
+  -webkit-animation: circle 1.5s ease-in forwards;
+}
+
+
+
+
+/* Keyframes */
+@-webkit-keyframes fill {
+  0% {
+    width: 0%;
+    height: 1px;
+  }
+  50% {
+    width: 100%;
+    height: 1px;
+  }
+  100% {
+    width: 100%;
+    height: 100%;
+    background: yellow;
+  }
+}
+
+/* Keyframes */
+@-webkit-keyframes circle {
+  0% {
+    width: 1px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    height: 1px;
+    z-index: -1;
+    background: #eee;
+    border-radius: 100%;
+  }
+  100% {
+    background: #fffffc;
+    height: 5000%;
+    width: 5000%;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 0;
+  }
+  .div{
+  	font-size: 80px;
+  }
+}
+.forwards{font-family: "Times New Roman", Times, serif;font-size: 0.8em;color: white}
+.midfielders{font-family: "Times New Roman", Times, serif;font-size: 0.8em;color: white}
+.defenders{font-family: "Times New Roman", Times, serif;font-size: 0.8em;color: white}
+.goalkeepers{font-family: "Times New Roman", Times, serif;font-size: 0.8em;color: white}
+	</style>>
+</head>
+<body bgcolor="black">
+	<center><img src ="title.jpg" width ="400px"></center>
+
+
+  <div class="fontchange">
+  <nav class="circle">
+
+    <ul><font face="Bree Serif">
+      <li><a href="file:///C:/Users/dhruv/Desktop/PROJECT/FRONT%20PAGE/Soccerpedia.html">HOME</a></li>
+      <li><a href="file:///C:/Users/dhruv/Desktop/PROJECT/PLAYERS/players.html">PLAYERS</a></li>
+      <li><a href="file:///C:/Users/dhruv/Desktop/PROJECT/TOURNAMENTS/tournaments.html">TOURNAMENTS</a></li>
+      <li><a href="file:///C:/Users/dhruv/Desktop/PROJECT/TEAMS/teams.html">TEAMS</a></li>
+      <li><a href="file:///C:/Users/dhruv/Desktop/PROJECT/MEDIA/media.html">MEDIA</a></li>
+      <li><a href="file:///C:/Users/dhruv/Desktop/PROJECT/ABOUT%20US/aboutus.html">ABOUT US</a></li></ul>
+  </nav>
+  <br>
+  <br>
+  <h3 style="text-align: center;"><font color="19ffc5">
+    FORWARDS</font></h3>
+    <div class="forwards">
+    <br>
+    <center><img src="messi.jpg" style="width: 1350px;height: 600px"></center>
+    <center><a href="https://en.wikipedia.org/wiki/Lionel_Messi">for more info </a></center>
+    <p>
+      ____________________________________________________________________________________________________________________________________________________________________________
+    </p>
+    <br>
+    <center><img src="ronaldo.jpg" style="width: 1350px;height: 750px"></center>
+    <center><a href="https://en.wikipedia.org/wiki/Cristiano_Ronaldo">for more info </a></center>
+     <p>
+      ____________________________________________________________________________________________________________________________________________________________________________
+    </p>
+    <br>
+    <center><img src="neymar.jpg" style="width: 1350px;height: 730px"></center>
+    <center><a href="https://en.wikipedia.org/wiki/Neymar">for more info </a></center>
+    <p>
+      ____________________________________________________________________________________________________________________________________________________________________________
+    </p>
+    <br>
+    <center><img src="aguero.jpg" style="width: 1350px;height: 730px"></center>
+    <center><a href="https://en.wikipedia.org/wiki/Sergio_Ag%C3%BCero">for more info </a></center>
+    <p>
+      ____________________________________________________________________________________________________________________________________________________________________________
+    </p>
+    <br>
+    <center><img src="salah.jpg" style="width: 1350px;height: 730px"></center>
+    <center><a href="https://en.wikipedia.org/wiki/Mohamed_Salah">for more info </a></center>
+    <p>
+      ____________________________________________________________________________________________________________________________________________________________________________
+    </p>
+    <br>
+    <center><img src="mbappe.jpg" style="width: 1350px;height: 730px"></center>
+    <center><a href="https://en.wikipedia.org/wiki/Kylian_Mbapp%C3%A9">for more info </a></center>
+    <p>
+      ____________________________________________________________________________________________________________________________________________________________________________
+    </p>
+    <br>
+    <center><img src="suarez.jpg" style="width: 1350px;height: 730px"></center>
+    <center><a href="https://en.wikipedia.org/wiki/Luis_Su%C3%A1rez">for more info </a></center>
+    <p>
+      ____________________________________________________________________________________________________________________________________________________________________________
+    </p>
+    <br>
+    <center><img src="hazard.jpg" style="width: 1350px;height: 730px"></center>
+    <center><a href="https://en.wikipedia.org/wiki/Eden_Hazard">for more info </a></center>
+    <p>
+      ____________________________________________________________________________________________________________________________________________________________________________
+    </p>
+    <br>
+    <center><img src="robert.jpg" style="width: 1350px;height: 730px"></center>
+    <center><a href="https://en.wikipedia.org/wiki/Robert_Lewandowski">for more info </a></center>
+    <p>
+      ____________________________________________________________________________________________________________________________________________________________________________
+    </p>
+    <br>
+    <center><img src="griezmann.jpg" style="width: 1350px;height: 730px"></center>
+    <center><a href="https://en.wikipedia.org/wiki/Antoine_Griezmann">for more info </a></center>
+    <p>
+      ____________________________________________________________________________________________________________________________________________________________________________
+    </p>
+    <br>
+
+    </div>
+  <br>
+  <br>
+  <h3 style="text-align: center;"><font color="19ffc5">
+    MIDFIELDERS</font></h3>
+     <div class="midfielders">
+    <br>
+    <center><img src="debryune.jpg" style="width: 1350px;height: 740px"></center>
+    <center><a href="https://en.wikipedia.org/wiki/Kevin_De_Bruyne">for more info </a></center>
+    <p>
+      ____________________________________________________________________________________________________________________________________________________________________________
+    </p>
+    <br>
+    <center><img src="dejong.jpg" style="width: 1350px;height: 750px"></center>
+    <center><a href="https://en.wikipedia.org/wiki/Frenkie_de_Jong">for more info </a></center>
+     <p>
+      ____________________________________________________________________________________________________________________________________________________________________________
+    </p>
+    <br>
+    <center><img src="isco.jpg" style="width: 1350px;height: 730px"></center>
+    <center><a href="https://en.wikipedia.org/wiki/Isco">for more info </a></center>
+    <p>
+      ____________________________________________________________________________________________________________________________________________________________________________
+    </p>
+    <br>
+    <center><img src="pogba.jpg" style="width: 1350px;height: 730px"></center>
+    <center><a href="https://en.wikipedia.org/wiki/Paul_Pogba">for more info </a></center>
+    <p>
+      ____________________________________________________________________________________________________________________________________________________________________________
+    </p>
+    <br>
+    <center><img src="coutinho.jpg" style="width: 1350px;height: 730px"></center>
+    <center><a href="https://en.wikipedia.org/wiki/Philippe_Coutinho">for more info </a></center>
+    <p>
+      ____________________________________________________________________________________________________________________________________________________________________________
+    </p>
+    <br>
+    <center><img src="silva.jpg" style="width: 1350px;height: 730px"></center>
+    <center><a href="https://en.wikipedia.org/wiki/Bernardo_Silva">for more info </a></center>
+    <p>
+      ____________________________________________________________________________________________________________________________________________________________________________
+    </p>
+    <br>
+    <center><img src="kroos.jpg" style="width: 1350px;height: 730px"></center>
+    <center><a href="https://en.wikipedia.org/wiki/Toni_Kroos">for more info </a></center>
+    <p>
+      ____________________________________________________________________________________________________________________________________________________________________________
+    </p>
+    <br>
+    <center><img src="kante.jpg" style="width: 1350px;height: 730px"></center>
+    <center><a href="https://en.wikipedia.org/wiki/N%27Golo_Kant%C3%A9">for more info </a></center>
+    <p>
+      ____________________________________________________________________________________________________________________________________________________________________________
+    </p>
+    <br>
+  </div>
+  <br>
+  <br>
+  <h3 style="text-align: center;"><font color="19ffc5">
+    DEFENDERS</font></h3>
+     <div class="defenders">
+      <br>
+    <center><img src="ramos.jpg" style="width: 1350px;height: 740px"></center>
+    <center><a href="https://en.wikipedia.org/wiki/Sergio_Ramos">for more info </a></center>
+    <p>
+      ____________________________________________________________________________________________________________________________________________________________________________
+    </p>
+    <br>
+    <center><img src="vandijk.jpg" style="width: 1350px;height: 750px"></center>
+    <center><a href="https://en.wikipedia.org/wiki/Virgil_van_Dijk">for more info </a></center>
+     <p>
+      ____________________________________________________________________________________________________________________________________________________________________________
+    </p>
+    <br>
+    <center><img src="deligt.jpg" style="width: 1350px;height: 730px"></center>
+    <center><a href="https://en.wikipedia.org/wiki/Matthijs_de_Ligt">for more info </a></center>
+    <p>
+      ____________________________________________________________________________________________________________________________________________________________________________
+    </p>
+    <br>
+    <center><img src="pique.jpg" style="width: 1350px;height: 730px"></center>
+    <center><a href="https://en.wikipedia.org/wiki/Gerard_Piqu%C3%A9">for more info </a></center>
+    <p>
+      ____________________________________________________________________________________________________________________________________________________________________________
+    </p>
+    <br>
+    <center><img src="alba.jpg" style="width: 1350px;height: 730px"></center>
+    <center><a href="https://en.wikipedia.org/wiki/Jordi_Alba">for more info </a></center>
+    <p>
+      ____________________________________________________________________________________________________________________________________________________________________________
+    </p>
+    <br>
+    <center><img src="umtiti.jpg" style="width: 1350px;height: 730px"></center>
+    <center><a href="https://en.wikipedia.org/wiki/Samuel_Umtiti">for more info </a></center>
+    <p>
+      ____________________________________________________________________________________________________________________________________________________________________________
+    </p>
+    <br>
+    <center><img src="carvajal.jpg" style="width: 1350px;height: 730px"></center>
+    <center><a href="https://en.wikipedia.org/wiki/Dani_Carvajal">for more info </a></center>
+    <p>
+      ____________________________________________________________________________________________________________________________________________________________________________
+    </p>
+    <br>
+  </div>
+  <br>
+  <br>
+   <h3 style="text-align: center;"><font color="19ffc5">
+    GOALKEEPERS</font></h3>
+    <div class="goalkeepers">
+      <br>
+    <center><img src="degea.jpg" style="width: 1350px;height: 740px"></center>
+    <center><a href="https://en.wikipedia.org/wiki/David_de_Gea">for more info </a></center>
+    <p>
+      ____________________________________________________________________________________________________________________________________________________________________________
+    </p>
+    <br>
+    <center><img src="terstegen.jpg" style="width: 1350px;height: 750px"></center>
+    <center><a href="https://en.wikipedia.org/wiki/Marc-Andr%C3%A9_ter_Stegen">for more info </a></center>
+     <p>
+      ____________________________________________________________________________________________________________________________________________________________________________
+    </p>
+    <br>
+    <center><img src="becker.jpg" style="width: 1350px;height: 730px"></center>
+    <center><a href="https://en.wikipedia.org/wiki/Alisson_(footballer,_born_1992)">for more info </a></center>
+    <p>
+      ____________________________________________________________________________________________________________________________________________________________________________
+    </p>
+    <br>
+    <center><img src="oblak.jpg" style="width: 1350px;height: 730px"></center>
+    <center><a href="https://en.wikipedia.org/wiki/Jan_Oblak">for more info </a></center>
+    <p>
+      ____________________________________________________________________________________________________________________________________________________________________________
+    </p>
+	</body>
+	</html>

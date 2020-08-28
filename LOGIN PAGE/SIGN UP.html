@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<head><title>Soccerpedia</title>
+  <link rel="shortcut icon" href="football.png" />
+    <style>
+        @import url("https://fonts.googleapis.com/css?family=Comfortaa");
+
+body {
+  font-family: Comfortaa, sans-serif;
+  overflow: hidden;
+  background-image: url('training.jpg');
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.logincontainer {
+  height: 40%;
+  width: 80%;
+  
+  max-width: 430px;
+  height: 440px;
+  background: #ffffff5e;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: #000 2px 4px 10px 0.1px;
+}
+
+.logincontainer form {
+  margin-top: 4em;
+  text-align: center;
+}
+
+.logincontainer form input {
+  display: block;
+  padding: 0.6em 0.2em;
+  margin: 0 auto;
+  margin-bottom: 1em;
+  background: #e8e8e8;
+  border-color: transparent;
+  font-size: 1em;
+}
+
+.logincontainer form button {
+  background: #6bf178;
+  padding: 1em;
+  border-radius: 0.2em;
+  border: transparent;
+}
+
+.logincontainer div {
+  margin: 1em 0;
+  text-align: center;
+}
+
+.logincontainer div button {
+  font-size: 1em;
+  font-weight: bold;
+  padding: 0.6em 0.4em;
+  color: white;
+  border: transparent;
+  border-radius: 0.2em;
+  background: #35a7ff;
+}
+
+.logincontainer div button i {
+  margin-right: 1em;
+  font-size: 1.4em;
+}
+
+#signupform {
+  display: none;
+}
+
+.sociallogin {
+  position: absolute;
+  width: 100%;
+  bottom: 10px;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+        </style>
+</head>
+<body>
+<div class="logincontainer">
+  <form id="loginform" action="" method="">
+    <h2>Sign Up</h2>
+    <input type="text" placeholder="create username" required>
+    <input type="password" placeholder="password">
+    <input type="password" placeholder="re-type password">
+    <input type="text" placeholder="e-mail">
+    <button type="button" src=""><a href="file:///C:/Users/dhruv/Desktop/PROJECT/LOGIN%20PAGE/LOGIN.html">Sign Up</button>
+
+  </form>
+  <form id="signupform" action="" method="">
+    <h2>Sign Up</h2>
+    <input type="text" placeholder="name">
+    <input type="text" placeholder="phone number">
+    <button id="tologin" type="button"><i class="fas fa-angle-left"></i></button>
+    <button type="submit">Sign Up</button>
+  </form>
+  
+</div>
+<script>
+       $("#tosignup").click(function () {
+  $("#loginform").slideToggle("slow");
+  $("#signupform").delay(400).fadeToggle("slow");
+});
+$("#tologin").click(function () {
+  $("#signupform").fadeToggle("fast");
+  $("#loginform").delay(200).slideToggle("slow");
+});
+        
+            </script>
+</body>
+</html>

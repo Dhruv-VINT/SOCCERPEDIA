@@ -1,0 +1,177 @@
+<html>
+<head>
+<title> Soccerpedia </title>
+<link rel="shortcut icon" href="football.png" />
+<style>
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1700px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 3.5s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+.quotes{font-family: "Times New Roman", Times, serif;font-size: 2.0em;color: white}
+</style>
+</head>
+<body bgcolor="Black">
+<center><img src ="title.jpg" width ="400px"></center>
+<p > <font color="white">
+	____________________________________________________________________________________________________________________________________________________________________________
+</font>
+</p>
+<br>
+<p><font color="white">
+	<img src="fff1.jpg" style="width: 93%">
+	____________________________________________________________________________________________________________________________________________________________________________
+</p>
+<br>
+<br> 
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <a href="https://en.wikipedia.org/wiki/Association_football"><img src="1.jpg" style="width:100%"></a>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <a href="file:///C:/Users/dhruv/Desktop/PROJECT/PLAYERS/players.html"><img src="2.jpg" style="width:100%"></a>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <a href="file:///C:/Users/dhruv/Desktop/PROJECT/TOURNAMENTS/tournaments.html"><img src="3.jpg" style="width:100%"></a>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <a href="file:///C:/Users/dhruv/Desktop/PROJECT/TEAMS/teams.html"><img src="4.jpg" style="width:100%"></a>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <a href="file:///C:/Users/dhruv/Desktop/PROJECT/MEDIA/media.html"><img src="5.jpg" style="width:100%"></a>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <a href="file:///C:/Users/dhruv/Desktop/PROJECT/ABOUT%20US/aboutus.html"><img src="6.jpg" style="width:100%"></a>
+</div>
+
+
+</div>
+<br>
+
+<div style="text-align:center">
+<span class="dot"></span> 
+<span class="dot"></span> 
+<span class="dot"></span>
+<span class="dot"></span> 
+<span class="dot"></span> 
+<span class="dot"></span> 
+
+</div>
+<p > <font color="white">
+	____________________________________________________________________________________________________________________________________________________________________________
+</font>
+</p>
+<br>
+<center><a href="http://localhost/cast/big.html"><img src="index.jpg"></a></center>
+</a>
+</div>
+<h3 style="text-align: center;"><font color="19ffc5">
+    </font></h3>
+    <div class="quotes">
+      <p>
+        " I learn all about life, with a ball at my feet. - Ronaldinho<br>
+        " Play for the name, on front of the shirt and they'll remember the name on the back. " - Tomy Adams<br>
+        " The biggest religion in the world is not even a religion. " - Fernando Torres<br>
+        " Playing with feet is one thing, playing with heart is another. " - Cristiano Ronaldo<br>
+        " Life is like a game of football, if there are no goals then you can't win. " - Zlatan Ibrahimovic
+      </p>
+    </div>
+  </font>
+</p>
+</body>
+</html>
+
+
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 3000); // Change image every 3 seconds
+}
+</script>
